@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AI BASED NATURAL DIASTER ANALYSIS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/styles/css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon"type="image/ico" href="images/mus.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://bootstrap.bundle.min.js/bootstrap.bundle.js">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.min.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="styles/styles/js/jquery.min.js"></script>
+<script src="styles/styles/js/bootstrap.min.js"></script>
+<style>
+
+.header1{
+height:90px;
+
+background-color:black;
+border:2px solid black;
+}
+
+.rel{
+
+position:absolute;
+top:10%;
+margin-left:0px;
+}
+
+
+
+
+.glow {
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+body
+{
+background-color:teal;
+background-repeat:no-repeat;
+background-size:cover;
+height:100%;
+width:100%;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+   
+
+
+</style>
+<body>
+
+<div>
+      <div class="header1">
+<img class="img-circle" style="margin-top:3px"  src=" {{ url_for('static' , filename = 'logo.jpg') }}" alt="logo.jpg" width="75px" height="75px">
+<div class="rel">
+<h1 width="100%" style="margin-left:90px; color:white; margin-top:-50px" class="glow"><b class="text-default" style="fontsize:40px" >AI BASED NATURAL DIASTER ANALYSIS </b></h1>
+</div>
+</div>
+</div>
+
+<div style="margin-left:800px; margin-top:-40px">
+    <button type="button"  > <a href="{{ url_for('index') }}">  HOME</a></button>
+	<button type="button" style="margin-left:10px" ><a href="{{ url_for('intro') }}"> INTRODUCTION</a></button>
+	<button type="button" style="margin-left:10px" ><a href= "{{ url_for('video_feed') }}">OPEN WITH CAM</a></button>
+    
+    
+  </div>
+
+
+
+
+  <div class="container" style="margin-top:10px;height:600px;width:100%">
+    
+
+ 
+  <div class="w3-container">
+
+
+  <div class="cards" style="margin-top:100px;margin-left:30px">
+    <article class="card">
+        <header>
+            <h2><b>CYCLONE</b></h2>
+        </header>    
+        <img src=" {{ url_for('static' , filename = 'cyclone.jpg') }}" alt="dis">
+        <div class="content">
+            <p><i>A cyclone is a general term for a weather system in which winds rotate inwardly to an area of low atmospheric pressure.</i></p>
+        </div>
+            
+    </article>
+            
+     <article class="card"style="margin-left:40px">
+        <header>
+            <h2><b>WILD FIRE</b></h2>
+        </header>    
+        <img src=" {{ url_for('static' , filename = 'wildimg.jfif') }}" alt="dis">
+        <div class="content">
+            <p><i>A wildfire is an uncontrolled fire that burns in wildland vegetation, often in rural areas.</i></p>
+        </div>
+      
+    </article>
+            
+    <article class="card"style="margin-left:40px">
+        <header>
+            <h2><b>EARTH QUAKE</b></h2>
+        </header>
+        <img src = " {{ url_for('static' , filename = 'earthquake.jfif') }}" alt="dis">
+        <div class="content">
+            <p><i>An earthquake is the shaking of the surface of the Earth resulting from a sudden release of energy in the Earth's lithosphere that creates seismic waves</i></p>
+        </div>
+        
+    </article>
+    <article class="card"style="margin-left:40px">
+        <header>
+            <h2><b>FLOOD</b></h2>
+        </header>
+        <img src=" {{ url_for('static' , filename = 'flood.jfif') }}" alt="dis">
+        <div class="content">
+            <p><i>A flood is an overflow of water that submerges land that is usually dry.</i> </p>
+        </div>
+
+    </article>
+</div>
+            
+</div>
+</div>
+
+
+</body>
+</html>
