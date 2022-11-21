@@ -29,7 +29,7 @@
 
 **Degree :** Bachelor of Engineering
 
-**Branch :** Computer Science Engineering
+**Branch :** Computer Science And Engineering
 
 **College :** Government College of Technology - Coimbatore-13.
 
